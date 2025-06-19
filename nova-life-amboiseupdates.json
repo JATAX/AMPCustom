@@ -1,13 +1,29 @@
 [
     {
         "UpdateStageName": "SteamCMD Download",
-        "UpdateSourcePlatform": "All",
+        "UpdateSourcePlatform": "Windows",
         "UpdateSource": "SteamCMD",
         "UpdateSourceData": "1665030",
-        "UpdateSourceArgs": "1665030",
-        "UnzipUpdateSource": false,
-        "OverwriteExistingFiles": false,
-        "DeleteAfterExtract": true,
+        "UpdateSourceArgs": "1665030 +app_set_config 1665030 \"os\" \"windows\" +app_set_config 1665030 \"architecture\" \"64\" validate",
+        "ForceDownloadPlatform": "Windows"
+    },
+    {
+        "UpdateStageName": "Create Steamclient Symlink",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        // Crée le dossier /home/amp/.steam/sdk64 et un lien symbolique vers steamclient.so
+        "UpdateSourceArgs": "-c \"mkdir -p /home/amp/.steam/sdk64 && ln -sf \\\"{{$FullRootDir}}linux64/steamclient.so\\\" /home/amp/.steam/sdk64/steamclient.so\"",
+        "OneShot": false
+    },
+    {
+        "UpdateStageName": "Create Game Servers Directory",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        // Crée le dossier Servers là où le jeu l'attend
+        "UpdateSourceArgs": "-c \"mkdir -p \\\"{{$FullRootDir}}Servers\\\"\"",
         "OneShot": false
     }
+    // L'étape "Initialise Wine" est déjà supprimée.
 ]
