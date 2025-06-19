@@ -1,10 +1,13 @@
 [
     {
         "UpdateStageName": "SteamCMD Download",
-        "UpdateSourcePlatform": "Windows",
+        "UpdateSourcePlatform": "All",
         "UpdateSource": "SteamCMD",
         "UpdateSourceData": "1665030",
-        "UpdateSourceArgs": "1665030 +app_set_config 1665030 \"os\" \"windows\" +app_set_config 1665030 \"architecture\" \"64\" validate",
-        "ForceDownloadPlatform": "Windows"
-    },
+        "UpdateSourceArgs": "1665030",
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": false,
+        "DeleteAfterExtract": true,
+        "OneShot": false
+    }
 ]
