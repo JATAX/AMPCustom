@@ -1,0 +1,19 @@
+[
+    {
+        "DisplayName": "Server Nova-life",
+        "Category": "Server Settings",
+        "Description": "Server Nova-life",
+        "Keywords": "server,nova-life",
+        "FieldName": "",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "Nova-Life: Amboise",
+        "Placeholder": "Nova-Life: Amboise",
+        "Suffix": "",
+        "Hidden": false,
+        "SkipIfEmpty": false,
+        "EnumValues": {}
+    }
+]
