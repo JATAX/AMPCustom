@@ -1,21 +1,13 @@
 [
     {
         "UpdateStageName": "SteamCMD Download",
-        "UpdateSourcePlatform": "Windows",
+        "UpdateSourcePlatform": "All",
         "UpdateSource": "SteamCMD",
         "UpdateSourceData": "885570",
         "UpdateSourceArgs": "885570",
-        "ForceDownloadPlatform": "Windows"
-    },
-    {
-        "UpdateStageName": "Initialise Wine",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "Executable",
-        "UpdateSourceData": "/bin/bash",
-        // MODIFIÉ : On a RETIRÉ "WINEDEBUG=-all" pour que Wine donne plus de détails
-        // Ajouté aussi "OneShot: true" au cas où ça termine mais AMP ne le voit pas.
-        "UpdateSourceArgs": "-c \"WINEPREFIX=\\\"/home/amp/.ampdata/instances/Nova-LifeAmboise01/nova-life-amboise/.wine\\\" WINEARCH=win64 /usr/bin/wineboot --init --update\"",
-        "SkipOnFailure": false,
-        "OneShot": true // Ajoute cette ligne pour qu'il ne s'exécute qu'une fois s'il réussit.
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": false,
+        "DeleteAfterExtract": true,
+        "OneShot": false
     }
 ]
