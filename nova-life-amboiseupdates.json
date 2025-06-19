@@ -5,7 +5,7 @@
         "UpdateSource": "SteamCMD",
         "UpdateSourceData": "885570",
         "UpdateSourceArgs": "885570",
-        "ForceDownloadPlatform": "Linux",
+        "ForceDownloadPlatform": "Windows",
         "UnzipUpdateSource": false,
         "OverwriteExistingFiles": false,
         "DeleteAfterExtract": true,
