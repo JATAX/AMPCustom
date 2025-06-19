@@ -1,20 +1,14 @@
 [
     {
         "UpdateStageName": "SteamCMD Download",
-        "UpdateSourcePlatform": "Windows",
+        "UpdateSourcePlatform": "All",
         "UpdateSource": "SteamCMD",
         "UpdateSourceData": "885570",
-        // MODIFIÉ : Ajout de commandes SteamCMD explicites pour la plateforme et l'architecture
-        "UpdateSourceArgs": "885570 +app_set_config 885570 \"os\" \"windows\" +app_set_config 885570 \"architecture\" \"64\" validate",
-        "ForceDownloadPlatform": "Windows"
-    },
-    {
-        "UpdateStageName": "Initialise Wine",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "Executable",
-        "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"WINEPREFIX=\\\"/home/amp/.ampdata/instances/Nova-LifeAmboise01/nova-life-amboise/.wine\\\" WINEARCH=win64 /usr/bin/wineboot --init --update\"",
-        "SkipOnFailure": false,
-        "OneShot": true
+        "UpdateSourceArgs": "885570",
+        "ForceDownloadPlatform": "Linux",
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": false,
+        "DeleteAfterExtract": true,
+        "OneShot": false
     }
 ]
