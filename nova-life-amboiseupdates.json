@@ -1,13 +1,18 @@
 [
     {
         "UpdateStageName": "SteamCMD Download",
-        "UpdateSourcePlatform": "All",
+        "UpdateSourcePlatform": "Windows", // <-- MODIFIÉ : était "All", doit être "Windows"
         "UpdateSource": "SteamCMD",
         "UpdateSourceData": "885570",
         "UpdateSourceArgs": "885570",
-        "UnzipUpdateSource": false,
-        "OverwriteExistingFiles": false,
-        "DeleteAfterExtract": true,
-        "OneShot": false
+        "ForceDownloadPlatform": "Windows" // <-- LAISSER TEL QUEL : c'est déjà correct
+    },
+    {
+        "UpdateStageName": "Initialise Wine",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "-c \"WINEPREFIX=\\\"{{$FullRootDir}}.wine\\\" WINEARCH=win64 WINEDEBUG=-all /usr/bin/wineboot --init --update\"",
+        "SkipOnFailure": false
     }
 ]
