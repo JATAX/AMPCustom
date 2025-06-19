@@ -10,7 +10,7 @@ Meta.ContainerPolicy=Supported
 Meta.ContainerPolicyReason=
 Meta.Prerequsites=[]
 Meta.EndpointURIFormat=
-Meta.AppConfigId=4abe62f2-79d8-4586-b689-1deb7826839d
+Meta.AppConfigId=fb4c2a05-f31b-4056-a106-84a49126fd9c
 App.AdminMethod=STDIO
 App.HasReadableConsole=true
 App.HasWritableConsole=true
@@ -68,7 +68,7 @@ Console.AppReadyRegex=^\^\\\[\[\\d\\\.\]\+-\[\\d\\\.:\]\+\\\]\\\[\[\\d\s+\]\+\\\
 Console.UserJoinRegex=^\^\\\[\[\\d\\\.\]\+-\[\\d\\\.:\]\+\\\]\\\[\[\\d\s+\]\+\\\]LogNet:\s+Login\s+request:\s+\\\?Name=\(\?<username>\.\+\?\)\s+userId:\s+STEAM:UNKNOWN\s+\\\[\(\?<userid>\.\+\?\)\\\]\s+platform:\s+STEAM\$$
 Console.UserLeaveRegex=^\^\\\[\[\\d\\\.\]\+-\[\\d\\\.:\]\+\\\]\\\[\[\\d\s+\]\+\\\]LogNet:\s+UChannel::Close:\s+Sending\s+CloseBunch\\\.\(\?:\.\+\?\)\s+UniqueId:\s+STEAM:UNKNOWN\s+\\\[\(\?<userid>\.\+\?\)\\\]\$$
 Console.UserChatRegex=^$
-Meta.OS=3
+Meta.OS=2
 Meta.ConfigManifest=nova-life-amboiseconfig.json
 Meta.MetaConfigManifest=nova-life-amboisemetaconfig.json
 Meta.ConfigRoot=nova-life-amboise.kvp
