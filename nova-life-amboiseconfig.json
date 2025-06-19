@@ -10,10 +10,6 @@
         "ParamFieldName": "",
         "IncludeInCommandLine": false,
         "DefaultValue": "Nova-Life: Amboise",
-        "Placeholder": "Nova-Life: Amboise",
-        "Suffix": "",
-        "Hidden": false,
-        "SkipIfEmpty": false,
         "EnumValues": {}
     }
 ]
