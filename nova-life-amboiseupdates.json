@@ -1,26 +1,13 @@
 [
     {
         "UpdateStageName": "SteamCMD Download",
-        "UpdateSourcePlatform": "Windows",
+        "UpdateSourcePlatform": "All",
         "UpdateSource": "SteamCMD",
         "UpdateSourceData": "1665030",
-        "UpdateSourceArgs": "1665030 +app_set_config 1665030 \"os\" \"windows\" +app_set_config 1665030 \"architecture\" \"64\" validate",
-        "ForceDownloadPlatform": "Windows"
-    },
-    {
-        "UpdateStageName": "Create Steamclient Symlink",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "Executable",
-        "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"mkdir -p /home/amp/.steam/sdk64 && ln -sf \\\"{{$FullRootDir}}linux64/steamclient.so\\\" /home/amp/.steam/sdk64/steamclient.so\"",
-        "OneShot": false
-    },
-    {
-        "UpdateStageName": "Create Game Servers Directory",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "Executable",
-        "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"mkdir -p \\\"{{$FullRootDir}}Servers\\\"\"",
+        "UpdateSourceArgs": "885570",
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": false,
+        "DeleteAfterExtract": true,
         "OneShot": false
     }
 ]
