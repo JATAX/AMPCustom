@@ -81,4 +81,4 @@ App.WorkingDir=
 App.ExecutableWin=sbox-server.exe
 App.ExecutableLinux=sbox-server.exe
 App.LinuxCommandLineArgs=
-App.EnvironmentVariables={"WINEARCH": "win64", "SteamAppId": "1892930", "LD_LIBRARY_PATH": "{{$FullBaseDir}}linux64:{{$LD_LIBRARY_PATH}}"}
+App.EnvironmentVariables={"WINEARCH": "win64", "SteamAppId": "1892930", "LD_LIBRARY_PATH": "{{$FullBaseDir}}linux64:{{$FullRootDir}}linux64:%LD_LIBRARY_PATH%"}
