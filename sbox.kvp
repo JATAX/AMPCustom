@@ -1,5 +1,5 @@
 Meta.DisplayName=S&Box
-Meta.Description=Serveur Dédié S&Box (Linux Natif .NET)
+Meta.Description=Serveur Dédié S&Box (Linux Natif .NET 10)
 Meta.Arch=x86_64
 Meta.Author=JATAX
 Meta.URL=https://store.steampowered.com/app/1892930/sbox_Dedicated_Server/
@@ -17,7 +17,7 @@ App.HasWritableConsole=true
 App.DisplayName=S&Box
 App.CommandLineArgs=+game facepunch.sandbox +ip 0.0.0.0 +port {{GamePort}} {{$FormattedArgs}}
 App.WindowsCommandLineArgs=
-App.CommandLineParameterFormat=-{0} "{1}"
+App.CommandLineParameterFormat=+{0} "{1}"
 App.CommandLineParameterDelimiter= 
 App.RapidStartup=false
 App.ApplicationReadyMode=Immediate
